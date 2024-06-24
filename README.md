@@ -1,6 +1,6 @@
 # RENTIFY
 
-Link to application - [Rentify](https://rentify-orcin-two.vercel.app/property)
+Link to application - [Rentify](https://rentify-orcin-two.vercel.app)
 
 ### Description
 
