@@ -17,6 +17,9 @@ app.use(
     })
 );
 
+app.get("/", (req, res) => {
+    res.json("Api for Rentify");
+});
 app.use("/api/v1/auth", userRouter);
 app.use("/api/v1/property", PropertyRouter);
 app.use("/api/v1/filters", FilterRouter);
