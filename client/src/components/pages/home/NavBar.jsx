@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import Info from "../../Info";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,9 +8,14 @@ import { jwtDecode } from "jwt-decode";
 const NavBar = () => {
     const navigate = useNavigate();
     const loggedIn = Cookies.get("authToken");
-    const username = jwtDecode(loggedIn).username;
+    const [username, setUsername] = useState("");
+    if (loggedIn) {
+        setUsername(jwtDecode(loggedIn).username);
+    }
     const isSeller = Cookies.get("isSeller");
     const [display, setDisplay] = useState("none");
+
+    useEffect(() => {});
 
     const logout = (e) => {
         e.preventDefault();
