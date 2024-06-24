@@ -6,7 +6,7 @@ import edit from "../assets/images/edit.png";
 import deleteIcon from "../assets/images/delete.png";
 
 const Info = {
-    server: "https://rentify-dvmrexfht-0xmeph1stos-projects.vercel.app",
+    server: "https://rentify-psi.vercel.app",
     images: {
         account: account,
         home: home,
