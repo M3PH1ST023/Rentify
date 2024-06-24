@@ -10,6 +10,7 @@ const Signup = () => {
     const [password, setPassword] = useState();
     const [email, setEmail] = useState();
     const [phone, setPhone] = useState();
+    const [seller, setSeller] = useState(false);
 
     const validate = (e) => {
         e.preventDefault();
@@ -32,6 +33,7 @@ const Signup = () => {
             password: password,
             email: email,
             phone: phone,
+            isSeller: seller,
         };
         axios
             .post(Info.server + "/api/v1/auth", postBody)
@@ -97,6 +99,22 @@ const Signup = () => {
                             setPassword(e.target.value);
                         }}
                     />
+                </div>
+                <div className="signup flex f-between">
+                    <input
+                        type="checkbox"
+                        onClick={(e) => {
+                            if (seller) {
+                                setSeller(false);
+                            } else {
+                                setSeller(true);
+                            }
+                            console.log(seller);
+                        }}
+                    />
+                    <span style={{ color: "blue" }}>
+                        I'd like to register as landlord
+                    </span>
                 </div>
                 <div className="signup flex f-between">
                     <span>Already an User?</span>
