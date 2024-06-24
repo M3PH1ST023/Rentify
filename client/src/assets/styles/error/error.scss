@@ -1,0 +1,30 @@
+@import "../global";
+
+.error-container {
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+    img {
+        height: 400px;
+    }
+    h2 {
+        margin: 5px;
+        font-size: 35px;
+    }
+    .link {
+        background: $color2;
+        padding: 12.5px 17.5px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        color: $color3;
+        text-decoration: none;
+        box-shadow: $shadow;
+        transition: 0.2s ease;
+        &:hover {
+            background: $color3;
+            color: $color2;
+            border: 1px solid $color2;
+        }
+    }
+}

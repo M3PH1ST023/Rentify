@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html,
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+  color: #f1faee;
+  background: #2b2d42;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  position: absolute;
+  background: #2b2d42;
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-between {
+  justify-content: space-between;
+}
+
+.home-container {
+  height: 100%;
+  width: 100%;
+}
+
+.filter-container {
+  color: #2b2d42;
+  position: fixed;
+  height: 98%;
+  width: 290px;
+  left: 0.5%;
+  border-radius: 15px;
+  background-color: #8d99ae;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2), 8px 8px 15px rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
+  padding-left: 10px;
+}
+.filter-container h3 {
+  font-size: 30px;
+  margin: 20px 0px 0px 0px;
+}
+.filter-container div h4 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.filter-container hr {
+  margin: 20px 10px 15px 0px;
+  height: 3px;
+  border: none;
+  border-radius: 100px;
+  background: #2b2d42;
+}
+
+.locations select {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  color: #f1faee;
+  background: #2b2d42;
+  font-size: 15px;
+}
+
+.types button {
+  background: #2b2d42;
+  color: #f1faee;
+  border-radius: 7.5px;
+  padding: 10px 30px;
+  border: none;
+  margin: 2px 2px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button.selected {
+  font-weight: bold;
+  border: 2px solid #f1faee;
+}
+
+.submit {
+  margin-right: 10px;
+  height: 40px;
+  font-family: "Ubuntu", sans-serif;
+  background: #2b2d42;
+  border: none;
+  border-radius: 10px;
+  color: #f1faee;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.inp {
+  gap: 10px;
+}
+.inp input {
+  width: 35%;
+  font-size: 15px;
+  background: #2b2d42;
+  color: #f1faee;
+  padding: 7.5px;
+  border-radius: 10px;
+}
+
+.home-content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 320px);
+  right: 0px;
+  top: 0px;
+}
+.home-content .content {
+  height: -moz-max-content;
+  height: max-content;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.owner-data {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.owner-data .owner-content {
+  padding: 20px;
+  border-radius: 15px;
+  background: #8d99ae;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2), 8px 8px 15px rgba(0, 0, 0, 0.3);
+  gap: 10px;
+}
+.owner-data .owner-content h2 {
+  color: #2b2d42;
+}
+.owner-data .owner-content h3 {
+  margin: 0px;
+}
+.owner-data .owner-content span {
+  text-align: right;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.houses {
+  height: -moz-max-content;
+  height: max-content;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.houses .house {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2), 8px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  justify-content: space-around;
+}
+.houses .house:hover {
+  box-shadow: -8px -8px 15px rgba(111, 212, 255, 0.1), 8px 8px 15px rgba(111, 212, 255, 0.1);
+}
+.houses .house * {
+  margin: 5px -10px 2px 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  align-items: end;
+  gap: 10px;
+}
+nav .account {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2), 8px 8px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+nav .nav-links {
+  background: #8d99ae;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  width: 120%;
+  gap: 20px;
+}
+nav .nav-links a {
+  width: 80%;
+  text-align: right;
+  text-decoration: none;
+  color: #f1faee;
+  padding: 10px 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+nav .nav-links a:hover {
+  background: #2b2d42;
+  border-radius: 10px;
+}
+nav .login a {
+  color: #8d99ae;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav .login a:hover {
+  color: #f1faee;
+  text-decoration: underline;
+}/*# sourceMappingURL=home.css.map */

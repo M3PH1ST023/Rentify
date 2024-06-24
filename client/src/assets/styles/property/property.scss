@@ -1,0 +1,119 @@
+@import "../global";
+
+.property-container {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    img {
+        height: 75px;
+        cursor: pointer;
+    }
+}
+
+.add-property-container {
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    box-shadow: $shadow;
+    gap: 30px;
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+        color: rgb(255, 55, 55);
+    }
+    h2 {
+        margin: 2px;
+        text-align: center;
+        font-size: 25px;
+    }
+    .add-property-form,
+    .owner-content {
+        box-shadow: $shadow;
+        background: $color2;
+        padding: 20px 50px;
+        gap: 10px;
+        border-radius: 15px;
+        .inp {
+            gap: 20px;
+            padding: 20px;
+            justify-content: space-between;
+            font-size: 20px;
+            align-items: center;
+            input {
+                font-size: 17.5px;
+                padding: 5px 5px;
+                border-radius: 10px;
+                border: 2px solid $color3;
+            }
+            select {
+                padding: 10px 40px;
+                border: none;
+                border-radius: 10px;
+                color: $color1;
+                background: $color3;
+                font-size: 15px;
+            }
+            label:nth-child(2) {
+                color: $color3;
+            }
+        }
+        button {
+            background: $color3;
+            color: $color1;
+            border-radius: 7.5px;
+            padding: 10px 30px;
+            border: none;
+            margin: 2px 2px;
+            cursor: pointer;
+            font-size: 20px;
+            font-family: $font;
+        }
+    }
+    .splitter {
+        height: 60%;
+        width: 2.5px;
+        border-radius: 10px;
+        background: $color1;
+    }
+}
+
+.property-content {
+    height: 100%;
+    width: 100%;
+    h2 {
+        margin-left: 10px;
+    }
+    .houses {
+        margin: 1%;
+        flex-wrap: wrap;
+        .add {
+            height: 75px;
+            width: 75px;
+            z-index: 1;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        .house {
+            background: $color2;
+            .icons {
+                gap: 10px;
+                top: 5px;
+                img {
+                    height: 30px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}

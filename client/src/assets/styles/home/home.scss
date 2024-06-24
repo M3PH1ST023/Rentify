@@ -1,0 +1,203 @@
+@import "../global";
+
+.home-container {
+    height: 100%;
+    width: 100%;
+}
+
+// FILTER
+
+.filter-container {
+    color: $color3;
+    position: fixed;
+    height: 98%;
+    width: 290px;
+    left: 0.5%;
+    border-radius: 15px;
+    background-color: $color2;
+    box-shadow: $shadow;
+    justify-content: space-around;
+    padding-left: 10px;
+    h3 {
+        font-size: 30px;
+        margin: 20px 0px 0px 0px;
+    }
+    div h4 {
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    hr {
+        margin: 20px 10px 15px 0px;
+        height: 3px;
+        border: none;
+        border-radius: 100px;
+        background: $color3;
+    }
+}
+
+.locations select {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    color: $color1;
+    background: $color3;
+    font-size: 15px;
+}
+
+.types button {
+    background: $color3;
+    color: $color1;
+    border-radius: 7.5px;
+    padding: 10px 30px;
+    border: none;
+    margin: 2px 2px;
+    cursor: pointer;
+    font-family: $font;
+}
+
+button.selected {
+    font-weight: bold;
+    border: 2px solid $color1;
+}
+
+.submit {
+    margin-right: 10px;
+    height: 40px;
+    font-family: $font;
+    background: $color3;
+    border: none;
+    border-radius: 10px;
+    color: $color1;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.inp {
+    gap: 10px;
+    input {
+        width: 35%;
+        font-size: 15px;
+        background: $color3;
+        color: $color1;
+        padding: 7.5px;
+        border-radius: 10px;
+    }
+}
+
+// CONTENT
+
+.home-content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 320px);
+    right: 0px;
+    top: 0px;
+    .content {
+        height: max-content;
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 50px;
+    }
+}
+
+.owner-data {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    backdrop-filter: blur(5px);
+    .owner-content {
+        padding: 20px;
+        border-radius: 15px;
+        background: $color2;
+        box-shadow: $shadow;
+        gap: 10px;
+        h2 {
+            color: $color3;
+        }
+        h3 {
+            margin: 0px;
+        }
+        span {
+            text-align: right;
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0px;
+            cursor: pointer;
+        }
+    }
+}
+
+.houses {
+    height: max-content;
+    flex-wrap: wrap;
+    gap: 10px;
+    .house {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        cursor: pointer;
+        justify-content: space-around;
+        &:hover {
+            box-shadow: $hover-shadow;
+        }
+        * {
+            margin: 5px -10px 2px 10px;
+            width: max-content;
+        }
+    }
+}
+
+// NAVBAR
+
+nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    align-items: end;
+    gap: 10px;
+    .account {
+        height: 75px;
+        width: 75px;
+        border-radius: 100%;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
+    .nav-links {
+        background: $color2;
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+        width: 120%;
+        gap: 20px;
+        a {
+            width: 80%;
+            text-align: right;
+            text-decoration: none;
+            color: $color1;
+            padding: 10px 10px;
+            transition: 0.5s ease;
+            cursor: pointer;
+            &:hover {
+                background: $color3;
+                border-radius: 10px;
+            }
+        }
+    }
+    .login a {
+        color: $color2;
+        text-decoration: none;
+        font-size: 20px;
+        &:hover {
+            color: $color1;
+            text-decoration: underline;
+        }
+    }
+}

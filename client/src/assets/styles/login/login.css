@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html,
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+  color: #f1faee;
+  background: #2b2d42;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  position: absolute;
+  background: #2b2d42;
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.f-between {
+  justify-content: space-between;
+}
+
+.login-container {
+  height: 100%;
+  width: 100%;
+}
+
+.login-form {
+  color: #2b2d42;
+  background: #8d99ae;
+  border-radius: 15px;
+  gap: 20px;
+  padding: 20px 50px;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.2), 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.login-form h2 {
+  text-align: center;
+}
+.login-form .inp {
+  font-weight: bold;
+  gap: 10px;
+  font-size: 20px;
+}
+.login-form .inp input {
+  width: 250px;
+  font-size: 17.5px;
+  background: transparent;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid #2b2d42;
+}
+.login-form .signup a {
+  cursor: pointer;
+  color: #003566;
+}
+.login-form button {
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-size: 17.5px;
+  background: #2b2d42;
+  color: #f1faee;
+  cursor: pointer;
+}/*# sourceMappingURL=login.css.map */
