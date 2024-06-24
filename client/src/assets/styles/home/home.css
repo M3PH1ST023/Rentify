@@ -116,10 +116,10 @@ button.selected {
   cursor: pointer;
 }
 
-.inp {
+.optionals .inp {
   gap: 10px;
 }
-.inp input {
+.optionals .inp input {
   width: 35%;
   font-size: 15px;
   background: #2b2d42;
