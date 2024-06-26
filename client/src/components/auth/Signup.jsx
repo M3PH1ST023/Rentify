@@ -6,23 +6,28 @@ import Info from "../Info";
 
 const Signup = () => {
     const navigate = useNavigate();
-    const [username, setUsername] = useState();
-    const [password, setPassword] = useState();
-    const [email, setEmail] = useState();
-    const [phone, setPhone] = useState();
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState(0);
     const [seller, setSeller] = useState(false);
 
     const validate = (e) => {
         e.preventDefault();
+        let flag = 0;
         if (username.length < 8) {
             toast.error("Username must be atleast 8 characters");
+            flag = 1;
         }
         if (password.length < 8) {
             toast.error("Password must be atleast 8 characters");
+            flag = 1;
         }
-        if (phone.length != 10) {
+        if (phone.toString().length != 10) {
+            flag = 1;
             toast.error("Enter valid phone number");
-        } else {
+        }
+        if (flag == 0) {
             handleSubmit();
         }
     };
